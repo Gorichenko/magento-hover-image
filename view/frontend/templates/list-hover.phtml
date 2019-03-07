@@ -1,0 +1,19 @@
+ <?php
+/**
+ * Copyright © Mageside. All rights reserved.
+ * See MS-LICENSE.txt for license details.
+ */
+
+/** @var Mageside\CatalogHoverImage\Block\HoverList $block */
+?>
+<?php if($block->isEnabled()): ?>
+    <script type="text/x-magento-init">
+        {
+            "*": {
+                "Mageside_CatalogHoverImage/js/hover-list": {
+                    "hoverData": <?= /* @noEscape */ $block->getHoverImageList(); ?>
+                }
+            }
+        }
+    </script>
+<?php endif; ?>

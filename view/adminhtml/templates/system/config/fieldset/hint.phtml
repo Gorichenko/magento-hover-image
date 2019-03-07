@@ -1,0 +1,33 @@
+<?php
+/**
+ * Copyright © Mageside. All rights reserved.
+ * See MS-LICENSE.txt for license details.
+ */
+?>
+<div class="mageside-hint">
+    <img src="https://mageside.com/skin/frontend/rwd/mageside_shop/images/logo.png"/><br><br>
+    <div class="content">
+        <p>
+            <strong class="module-name">
+                <?= $block->escapeHtml($block->getModuleName()); ?> <?= $block->escapeHtml($block->getVersion()); ?>
+            </strong>
+            <?= $block->escapeHtml(__(' by')); ?>
+            <a target="_blank" href="https://mageside.com/">
+                <strong>Mageside</strong>
+            </a>
+        </p>
+        <p>
+            <?= $block->escapeHtml(__('Your feedback for ')); ?>
+            <a href="<?= $block->escapeUrl($block->getModulePage()); ?>" target="_blank"><?= $block->escapeHtml($block->getModuleName()); ?></a>
+            <?= $block->escapeHtml(__('is highly appreciated.')); ?>
+        </p>
+        <p>
+            <?= $block->escapeHtml(__('Found an issue? Need help? Got custom request? Please ')); ?>
+            <a href="https://mageside.com/contacts/" target="_blank"><?= $block->escapeHtml(__('Contact us')); ?></a>.
+        </p>
+        <p>
+            <?= $block->escapeHtml(__('You can check more extensions designed by our team in our ')); ?>
+            <a href="https://mageside.com/" target="_blank"><?= $block->escapeHtml(__('Store')); ?></a>.
+        </p>
+    </div>
+</div>
